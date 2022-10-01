@@ -1,0 +1,83 @@
+//color
+$color-primary: rgba(59, 32, 11, 1)
+$color-second: rgba(29, 6, 5, 0.69)
+$color-third: rgba(29, 6, 5, 0.9)
+
+$color-white: rgba(255, 255, 255, 0.85)
+$color-red: rgba(244, 49, 39, 1)
+$color-yellow: rgba(245, 154, 27, 1)
+$color-title-black: rgba(99, 83, 82, 1)
+
+//font-size
+$header-a-fontSize: 1.125rem
+$header-button-fontSize: 1rem
+
+$main-h1-fontSize: 4.85rem
+$main-p-fontSize: 1.42rem
+
+$button-fontSize: 1.42rem
+
+$info-h3-fontSize: 1.25rem
+$info-p-fontSize: 1rem
+
+$offer-h2-fontSize: 2rem
+
+$offer-p-fontSize: 1rem
+$offer-h3-fontSize: 1.56rem
+//mixin
+@mixin text_config($family,$weight,$size,$height,$color)
+    font-family: $family,sans-serif
+    font-weight: $weight
+    font-size: $size
+    line-height: $height
+    color: $color
+
+//reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figcaption, footer, header, hgroup, 
+menu, output, ruby, summary,
+time, mark, audio, video 
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+html
+    box-sizing: border-box
+    scroll-behavior: smooth
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, header, hgroup, menu
+    display: block
+
+body 
+    line-height: 1
+    font-family: 'Fira Code', sans-serif
+	
+
+ol, ul 
+    list-style: none
+
+blockquote, q 
+    quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after 
+    content: ''
+    content: none
+
+table 
+    border-collapse: collapse
+    border-spacing: 0
+
+button
+    border: none
+    font-family: inherit

@@ -1,0 +1,109 @@
+.header
+    display: flex
+    width: 100%
+    height: 65px
+    z-index: 1
+    position: fixed
+    background: rgba(59, 32, 11, 0.05)
+    backdrop-filter: blur(5px)
+    
+
+    .warrap-header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+        box-sizing: border-box
+        
+        .navigation
+            display: flex
+            align-items: center
+            img
+                margin-right: 60px
+            a
+                @include text_config('Lato',700,$header-a-fontSize,25px,$color-title-black)
+                text-decoration: none
+                margin-right: 16px
+        .warrap-button
+            display: flex
+            align-items: center
+            gap: 15px
+            
+            .line-division
+                width: 0px
+                height: 47.66px
+                border-left: 1px solid #B50B04
+            
+            button
+                display: flex
+                align-items: center
+                justify-content: center
+                gap: 8px
+                width: 123px
+                height: 34px
+                padding: 4px 16px
+                border-radius: 4px
+                background: $color-yellow
+                @include text_config('Lato',700,$header-button-fontSize,25px,$color-primary)
+        
+        .mobile-menu
+            display: none
+            
+            .menu
+                background-color: transparent
+                border: none
+                cursor: pointer
+                display: flex
+                padding: 0
+                svg
+                    width: 50px
+            
+            .line
+                fill: none
+                stroke: black
+                stroke-width: 6
+                transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1)
+            
+            .line1
+                stroke-dasharray: 60 207
+                stroke-width: 6
+            
+            .line2
+                stroke-dasharray: 60 60
+                stroke-width: 6
+            
+            .line3
+                stroke-dasharray: 60 207
+                stroke-width: 6
+            
+            .opened 
+                .line1
+                    stroke-dasharray: 90 207
+                    stroke-dashoffset: -134
+                    stroke-width: 6
+            
+            .opened 
+                .line2
+                    stroke-dasharray: 1 60
+                    stroke-dashoffset: -30
+                    stroke-width: 6
+            
+            .opened 
+                .line3
+                    stroke-dasharray: 90 207
+                    stroke-dashoffset: -134
+                    stroke-width: 6
+            
+
+
+        @media (max-width: 1024px)
+            .navigation
+                a
+                    display: none
+            .warrap-button
+                display: none
+            .mobile-menu
+                display: block
+
+                
+                

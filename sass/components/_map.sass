@@ -2,26 +2,16 @@
     display: flex
     flex-direction: column
     align-items: center
-    margin: 20px 0
+    margin: 65px 0 20px 0 
     .container
         margin-bottom: 10px
         h3
-            font-family: 'Lilita One'
-            font-weight: 400
-            font-size: 1.56rem
-            line-height: 28px
-
+            @include text_config('Lilita One',400,1.56rem,28px,$color-third)
             text-align: center
             text-transform: uppercase
-
-            color: rgba(29, 6, 5, 0.9)
         p
-            font-family: 'Lato'
-            font-weight: 400
-            font-size: 1rem
-            line-height: 22px
-
-            color: rgba(29, 6, 5, 0.69)
+            @include text_config('Lato',400,1rem,22px,$color-third)
+            
             
 @media ( max-width: 599px )
     iframe

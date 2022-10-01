@@ -20,176 +20,140 @@
     </head>
 <body>
     <div class="app">
-        <header>
-            <div class="header_container">
-                <img src="img/svg/logo.svg" alt="logo empire burger">
-                <div class="nav-container">
-                    <nav class="navigation_bar">
-                        <a href="#home">Home</a>
-                        <a href="#promoção">Promoção</a>
-                        <a href="#cardapio">Cardapio</a>
-                        <a href="#">Comentario</a>
-                        <a href="#">Contato</a>
-                    </nav>
-                </div>
-                <div class="icons">
+        <header class="header">
+            <div class="warrap-header container">
+                <nav class="navigation">
+                    <img src="img/svg/logo.svg" alt="logo empire burger">
+                    <a href="#home">Home</a>
+                    <a href="#promocao">Promoção</a>
+                    <a href="#cardapio">Cardapio</a>
+                    <a href="#comentario">Comentario</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                
+                <div class="warrap-button">
                     <img src="img/svg/ifood-logo.svg" alt="icone ifood">
-                    <i class="fa-brands fa-instagram" alt="icone instagram"></i>
-                </div>
-                <button>
-                    <i class="fa-brands fa-whatsapp" alt="icone whatsapp"></i>
-                    Contato
-                </button>
-                <div class="menu_btn">
-                    <button class="btn">
-                        <span class="icon">
-                            <svg viewBox="0 0 175 80" width="40" height="40">
-                                <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                                <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                                <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                            </svg>
-                        </span>
-                        <span class="text">MENU</span>
+                    <img src="img/svg/instagram-icon.svg" alt="icone instagram">
+                    <div class="line-division"></div>
+                    <button>
+                        <i class="fa-brands fa-whatsapp fa-lg" alt="icone whatsapp"></i>
+                        Contato
                     </button>
                 </div>
-            </div>
+                <div class="mobile-menu">
+                    <button 
+                        class="menu" 
+                        onclick="this.classList.toggle('opened');
+                                this.setAttribute('aria-expanded',
+                                this.classList.contains('opened'))"
+                        aria-label="Main Menu"
+                        >
 
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                          <path class="line line2" d="M 20,50 H 80" />
+                          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                      </button>
+                </div>
+            </div>
         </header>
 
-        <section id="home" class="front_pag">
-            <div class="front_pag_title">
-                <p class="frist_p">Uma nova experiência!</p>
-                <span class="container_color_h1">
-                    <h1 class="h1_color">KING</h1>
-                    <h1 class="h1_color second">BURGER</h1>
-                </span>
-                <span class="container_color_p">
-                    <p class="p_color">Para quem tem um </p>
-                    <p class="p_color second">Apetite de um REI!</p>
-                </span>
-                <button class="btn_compra">Comprar Agora</button>
+        <section class="banner" id="home">
+            <div class="warrap-title container">
+                <div class="title-pag">
+                    <p>Uma nova experiência!</p>
+                    <h1>KING <span>BURGER</span></h1>
+                    <p>Para quem tem um <span>Apetite de um REI!</span></p>
+                    <button>Comprar Agora</button>
+                </div>
+                <div class="cards">
+                    <div class="card-warrap">
+                        <div class="img-warrap">
+                            <img src="img/svg/burger-icon2.svg" alt="hamburger icon">
+                        </div>
+                        <div class="info-warrap">
+                            <h3>artesanal</h3>
+                            <p>Nossas receitas são feitas com todo cuidado</p>
+                        </div>
+                    </div>
+                    <div class="dividing-line"></div>
+                    <div class="card-warrap">
+                        <div class="img-warrap">
+                            <img src="img/svg/fone-icon2.svg" alt="fone icon">
+                        </div>
+                        <div class="info-warrap">
+                            <h3>atendimento</h3>
+                            <p>Totalmente personalizado</p>
+                        </div>
+                    </div>
+                    <div class="dividing-line"></div>
+                    <div class="card-warrap">
+                        <div class="img-warrap">
+                            <img src="img/svg/delivery-icon2.svg" alt="delivery icon">
+                        </div>
+                        <div class="info-warrap">
+                            <h3>delivery speed</h3>
+                            <p>Entregamos menos de 45 minutos</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        
-        <section id="promoção" class="offer_pag">
 
-            <div class="container">
-
-                <div class="container_offer">
-
-                    <div class="card_offer">
-                        <div class="card_info">
-                            <img src="img/svg/burger-icon2.svg" alt="icone hamburger">
-                            <div class="container_card">
-                                <h2 class="title_h2">ARTESANAL</h2>
-                                <p class="color_p">Nossas receitas são feitas com todo cuidado</p>
-                            </div>
-                        </div>
-        
-                        <div class="card_info">
-                            <img src="img/svg/fone-icon2.svg" alt="icone atendimento">
-                            <div class="container_card">
-                                <h2 class="title_h2">ATENDIMENTO</h2>
-                                <p class="color_p">Totalmente personalizado</p>
-                            </div>
-                        </div>
-        
-                        <div class="card_info">
-                            <img src="img/svg/delivery-icon2.svg" alt="icon delivery">
-                            <div class="container_card">
-                                <h2 class="title_h2">DELIVERY SPEED</h2>
-                                <p class="color_p">Entregamos menos de 45 minutos</p>
-                            </div>
-                        </div>
-                    </div>
-
+        <section class="offer" id="promocao">
+            <div class="warrap-offer container">
+                <div class="title-offer">
+                    <h2>Ofertas especiais</h2>
+                    <p>Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque sempre estamos mudando o nosso cardapio.</p>
                 </div>
-                <div class="special_offer">
-                    <div class="container_title">
-                        <h3 class="h3_config">OFERTAS ESPECIAIS</h3>
-                        <p class="p_config">Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque sempre estamos mudando o nosso cardapio.</p>
-                    </div>
-                </div>
-                <div class="container_grid">
+                <div class="container-offer-grid">
                     <div class="img-1">
-                        <img src="img/menu-img/burger1.png" alt="opção hamburger">
-                        <h2 class="position_top-h2">Burger imperial+batata</h2>
-                        <p class="position_top-p">250kg</p>
-                        <p class="position_bottom-p">Apenas</p>
-                        <h3 class="position_bottom-h3">HOJE</h3>
+                        <img src="img/menu-img/burger1.png" alt="hamburger offer">
+                        <div class="top">
+                            <h3>Burger imperial+batata</h3>
+                            <p>250kg</p>
+                        </div>
+                        <div class="bottom">
+                            <p>Apenas</p>
+                            <h4>Hoje</h4>
+                        </div>
                     </div>
-
                     <div class="img-2">
-                        <img src="img/menu-img/batata2.png" alt="opção batata">
-                        <h2 class="position_top-h2">batata</h2>
-                        <p class="position_top-p">150kg</p>
+                        <img src="img/menu-img/batata2.png" alt="batata offer">
+                        <div class="top">
+                            <h3>batata</h3>
+                            <p>150kg</p>
+                        </div>
                     </div>
                     <div class="img-3">
-                        <img src="img/menu-img/sorvete3.png" alt="opção sorvete">
-                        <h2 class="position_top-h2">sorvete</h2>
-                        <p class="position_top-p">50kg</p>
-                    </div>
-                </div>
-
-                <div class="container_opening_hours">
-                    <div class="hours">
-                        <img src="img/svg/relogio.svg" alt="relogio"></img>
-                        <div class="hours_info">
-                            <h3>Horário de funcionamento</h3>
-                            <p>Segunda-feira a sexta-feira: 17h00 - 23h00</p>
-                            <p>Sabado a Domíngo: 18h00 - 23h00</p>
+                        <img src="img/menu-img/sorvete3.png" alt="sorvete offer">
+                        <div class="top">
+                            <h3>sorvete</h3>
+                            <p>50kg</p>
                         </div>
                     </div>
-                    <div class="social_network">
-                        <p>Não esqueça de marcar a gente no Instagram:</p>
-                        <h3>#empireburger </h3>
-                    </div>
                 </div>
             </div>
-        </section>
-
-        <section id="cardapio" class="container_menu">
-
-            <div class="left">
-
-                <div class="left-menu">
-
-                    <h2>Escolha o seu combo imperial, <span>peça agora!</span></h2>
-                    <p>Temos vários tipos de pratos para a nossa realeza, fique esperto porque temos sempre  promoção!</p>
-                    <button>Ver Cardápio Completo</button>
-
-                </div>
-
-            </div>
-            
-            <div class="rigth">
-                <div class="rigth-menu">
-
-                    <h2>Cardápio imperial | Burger</h2>
-                    
-                    <div>
-                        <h3>Classic burger .........................................................................<span>R$49,99</span></h3>
-                        <p>Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru, Tomate, Alface, Servidor do pão de batata</p>
-                    </div>
-                    <div>
-                        <h3>Classic burger .........................................................................<span>R$49,99</span></h3>
-                        <p>Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru, Tomate, Alface, Servidor do pão de batata</p>
-                    </div>
-                    <div>
-                        <h3>Classic burger .........................................................................<span>R$49,99</span></h3>
-                        <p>Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru, Tomate, Alface, Servidor do pão de batata</p>
-                    </div>
-                    <div>
-                        <h3>Classic burger .........................................................................<span>R$49,99</span></h3>
-                        <p>Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru, Tomate, Alface, Servidor do pão de batata</p>
-                    </div>
-
-                    
-                </div>
-            </div>
-
         </section>
         
+        <section class="opening-hours">
+            <div class="warrap-hour container">
+                <div class="card-info">
+                    <img src="img/svg/relogio.svg" alt="icone relogio">
+                    <div class="dividing-line"></div>
+                    <div class="warrap-info">
+                        <h4>Horário de funcionamento</h4>
+                        <p>Segunda-feira a sexta-feira: 17h00 - 23h00</p>
+                        <p>Sabado a Domíngo: 18h00 - 23h00</p>
+                    </div>
+                </div>
+                <div class="card-socialNetwork">
+                    <p>Não esqueça de marcar a gente no Instagram:</p>
+                    <h4>#empireburger</h4>
+                </div>
+            </div>
+        </section>
 
         <section class="map">
             <div class="container">
@@ -207,14 +171,15 @@
             </iframe>
         </section>
 
-        <footer class="footer_container">
-            <div class="container">
+        <footer class="footer">
+            <div class="warrap-footer container">
                 <img class="logo" src="img/footer-img.png" alt="logo do footer">
-
+                
                 <div class="icons">
                     <img src="img/ifood-icon-footer.svg" alt="icone do ifood">
                     <img src="img/insta-footer.svg" alt="icone do instagram">
                 </div>
+                
                 <ul>
                     <li>Home</li>
                     <li>Localização</li>
