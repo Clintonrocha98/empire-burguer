@@ -5,8 +5,7 @@ Esse projeto é uma landing page de uma hamburgueria fictícia chamada Empire Bu
 ## 🚀 Tecnologias
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [JS](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [SASS](https://sass-lang.com)
 
 ## 📝 Funcionalidades
 
@@ -25,6 +24,7 @@ Plataforma criada no intuito de apresentar desafios para desenvolvedores front-e
 Autor da plataforma: [Leo Vargas](https://github.com/leovargasdev)
 
 Figma: [Projeto](https://www.figma.com/file/ag4Az50adOF53pBrwI0wFg?node-id=0:1)
+
 Autor do designer da pagina: [Tiago Alves](https://www.behance.net/tiagofenixe9d9)
 
 [Link da pagina](https://clintonrocha98.github.io/empire-burguer/)
