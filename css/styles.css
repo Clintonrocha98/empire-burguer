@@ -340,6 +340,17 @@ button {
     display: none;
   }
 }
+@media (max-width: 600px) {
+  .banner .warrap-title .title-pag p:nth-child(1) {
+    font-size: 1.42rem;
+  }
+  .banner .warrap-title .title-pag h1 {
+    font-size: 4.85rem;
+  }
+  .banner .warrap-title .title-pag p:nth-child(3) {
+    font-size: 1.42rem;
+  }
+}
 .offer .warrap-offer {
   display: flex;
   flex-direction: column;
@@ -572,7 +583,7 @@ button {
   }
   .opening-hours .warrap-hour .card-info {
     width: 100%;
-    min-width: 500px;
+    max-width: 570px;
     height: auto;
     margin-top: 38px;
     margin-bottom: 64px;

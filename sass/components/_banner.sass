@@ -10,6 +10,7 @@
     background-repeat: no-repeat
     background-size: cover
     background-position: center
+
     .warrap-title
         box-sizing: border-box
         width: 100%
@@ -110,5 +111,18 @@
                             font-size: $info-p-fontSize
                 .dividing-line
                     display: none
+@media (max-width:600px)
+    .banner
+        .warrap-title
+            .title-pag
+                p:nth-child(1)
+                    $main-p-fontSize: 1.42rem
+                    font-size: $main-p-fontSize
+                h1
+                    $main-h1-fontSize: 4.85rem
+                    font-size: $main-h1-fontSize
+                p:nth-child(3)
+                    $main-p-fontSize: 1.42rem
+                    font-size: $main-p-fontSize                
                 
             
