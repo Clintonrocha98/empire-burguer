@@ -628,7 +628,7 @@ button {
 
 @media (max-width: 599px) {
   iframe {
-    width: 500px;
+    width: auto;
   }
 }
 @media (min-width: 600px) {
